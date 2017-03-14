@@ -1,5 +1,561 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
 @import "settings";
 @import "foundation";
+
+/*USEFULL CLASESS
+================================================*/
+
+body {
+  background-image: url("../img/mainBb.jpg");
+  background-repeat: repeat;
+
+}
+
+.vertical-center-parent{
+  height: 100%; 
+  display: table;
+}
+
+.vertical-center-child{
+  vertical-align: middle; 
+  display: table-cell;
+}
+
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+.flex-item {
+  padding: 10px;
+  width: 150px;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+  font-size: .8em;
+  
+  a{
+    color: #ffffff;
+    background-color: #e01783;
+    
+  }
+  a:hover{
+    color: #ccd111;
+  }
+}
+
+.sidebar { flex: 1; }
+
+.fullWidth {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.imageFull {
+  width: 100%;
+}
+
+.noGuuter {
+  margin: 0;
+  padding: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+@mixin white300($size) {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: $size;
+}
+
+@mixin white400($size) {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: $size;
+}
+
+/*HOME SCSS
+==================================================*/
+
+#topmenu{
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  background-color: #e01783;
+}
+
+
+#ovyogaLogo {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#home {
+  position: relative;
+  margin-top: 40px;
+}
+
+#homeBlock {
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/homeBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#homeInfo {
+  padding: 30px 0 20px 0;
+}
+
+.direccionHome {
+  text-transform: uppercase;
+  @include white300(.8em);
+}
+
+.homePhone {
+  @include white300(1em);
+}
+
+.homeSocial {
+  @include white300(1em);
+}
+
+.sellos{
+  width: 100%;
+  
+  div{
+    width: 250px;
+    margin: auto;
+    
+    img{
+      margin-left: 20px;
+    }
+    img:first-child{
+      margin-left: 0px;
+    }
+  }
+}
+#homeInfoMobile {
+  background-image: url("../img/homeBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 0 20px 0;
+}
+
+/*ACERCA DE
+==============================================================*/
+
+#acercadeBlock {
+  background-image: url("../img/acercadeBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+
+  }
+}
+
+.timeline-item {
+  margin-top: 30px !important;
+  height: 200px;
+}
+
+.timeline-titles {
+  font-weight: 800;
+  color: #ec008c;
+  font-size: 1em;
+}
+
+.timeline-text {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+#acercadeTimeline {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*HORARIOS
+==============================================================*/
+
+#horariosBlock {
+  background-image: url("../img/horariosBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+  }
+}
+
+#horariosChart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*MAESTROS
+==============================================================*/
+
+#maestrosBlock {
+  background-image: url("../img/maestrosBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+  }
+}
+
+#biosGrid {
+  margin-top: 50px;
+}
+
+.maestrosFeature {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.featureTitle {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.featureText {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+@import "foundation/components/block-grid";
+
+.bios-block-grid {
+  @include block-grid(
+          3,
+          rem-calc(20),
+          true
+  );
+}
+
+.bio-titles {
+  font-size: .9em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bio-text {
+  font-size: .7em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.maestro-title {
+  font-weight: 800;
+  color: #ec008c;
+  font-size: 1em;
+}
+
+/*FORMACIONES
+==============================================================*/
+
+#formacionesBlock {
+  background-image: url("../img/formacionesBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+  }
+}
+
+#formacionesSide {
+  margin-top: 50px;
+}
+
+#certificacionInfo {
+  margin-top: 50px;
+}
+
+.certificacion-titles {
+  font-weight: 800;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+/*TALLERES
+==============================================================*/
+
+#talleresBlock {
+  background-image: url("../img/talleresBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+  }
+}
+
+
+/*GALERIA
+==============================================================*/
+
+#galeriaBlock {
+  background-image: url("../img/galeriaBlock.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 480px;
+
+  div {
+    margin-top: 300px;
+  }
+}
+
+
+/*CONTCATO
+==============================================================*/
+#contcato {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+/*GENERAL
+==============================================================*/
+
+.section-titles {
+  @include white400(1.5em);
+}
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1200px) {
+
+  
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+  /*home
+  -----------------------*/
+  #mainMenu {
+    a {
+      /*padding: 0 15px 0 15px;*/
+    }
+  }
+
+  /*acerca de
+  ------------------------*/
+  #acercadeBlock {
+    height: 380px;
+    div {
+      margin-top: 200px;
+    }
+  }
+
+  /*horarios
+  ------------------------*/
+  #horariosBlock {
+    height: 380px;
+    div {
+      margin-top: 200px;
+    }
+  }
+
+  /*maestros
+  ------------------------*/
+  #maestrosBlock {
+    height: 380px;
+    div {
+      margin-top: 200px;
+    }
+  }
+
+  /*formaciones
+  ------------------------*/
+  #formacionesBlock {
+    height: 380px;
+    div {
+      margin-top: 200px;
+    }
+  }
+
+  /*talleres
+  ------------------------*/
+  #talleresBlock {
+    height: 380px;
+    div {
+      margin-top: 200px;
+    }
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 750px) {
+  /*home
+  -----------------------*/
+  #mainMenu {
+    a {
+      /*padding: 0 7px 0 7px;*/
+    }
+  }
+
+  .flex-item {
+    font-size: .7em;
+  }
+
+  /*acerca de
+  ------------------------*/
+  #acercadeBlock {
+    height: 280px;
+    div {
+      margin-top: 170px;
+    }
+  }
+
+  /*horarios
+  ------------------------*/
+  #horariosBlock {
+    height: 280px;
+    div {
+      margin-top: 170px;
+    }
+  }
+
+  /*maestros
+  ------------------------*/
+  #maestrosBlock {
+    height: 280px;
+    div {
+      margin-top: 170px;
+    }
+  }
+
+  /*formaciones
+  ------------------------*/
+  #formacionesBlock {
+    height: 280px;
+    div {
+      margin-top: 170px;
+    }
+  }
+
+  /*talleres
+  ------------------------*/
+  #talleresBlock {
+    height: 280px;
+    div {
+      margin-top: 170px;
+    }
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  /*home
+  -----------------------*/
+  .flex-item {
+    font-size: .5em;
+  }
+
+  #homeBlock {
+    display: none !important;
+  }
+
+  /*acerca de
+  ------------------------*/
+  #acercadeBlock {
+    height: 100px;
+    div {
+      margin-top: 30px;
+    }
+  }
+
+  /*horarios
+  ------------------------*/
+  #horariosBlock {
+    height: 100px;
+    div {
+      margin-top: 30px;
+    }
+  }
+
+  /*maestros
+  ------------------------*/
+  #maestrosBlock {
+    height: 100px;
+    div {
+      margin-top: 30px;
+    }
+  }
+
+  /*formaciones
+  ------------------------*/
+  #formacionesBlock {
+    height: 100px;
+    div {
+      margin-top: 30px;
+    }
+  }
+
+  /*talleres
+  ------------------------*/
+  #talleresBlock {
+    height: 100px;
+    div {
+      margin-top: 30px;
+    }
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 441px) {
+
+  .flex-item {
+    font-size: .3em;
+  }
+  
+}
 
 // Or selectively include components
 // @import
@@ -38,3 +594,5 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+

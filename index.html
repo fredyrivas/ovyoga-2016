@@ -1,171 +1,1156 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favi/favicon-16x16.png">
+	<link rel="manifest" href="img/favi/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
-    </div>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+	<title>OV YOGA</title>
+	<link rel="stylesheet" href="stylesheets/app.css"/>
+	<script src="bower_components/modernizr/modernizr.js"></script>
+
+
+</head>
+<body>
+
+
+<!--HOME
+===================================================================-->
+
+
+<div id="topmenu">
+	<ul class="flex-container">
+		<li class="flex-item sidebar"><a href="#home" target="_self" id="inicioMenu">INICIO</a></li>
+		<li class="flex-item sidebar"><a href="#acercade" target="_self" id="acercaMenu">ACERCA DE</a></li>
+		<li class="flex-item sidebar"><a href="#horarios" target="_self" id="horariosMenu">HORARIOS Y COSTOS</a></li>
+		<li class="flex-item sidebar"><a href="#maestros" target="_self" id="maestrosMenu">MAESTROS</a></li>
+		<li class="flex-item sidebar"><a href="#formaciones" target="_self" id="formacionesMenu">FORMACIONES</a></li>
+		<li class="flex-item sidebar"><a href="#talleres" target="_self" id="talleresMenu">TALLERES</a></li>
+		<li class="flex-item sidebar"><a href="#contacto" target="_self" id="contactoMenu">CONTACTO</a></li>
+	</ul>
+</div>
+
+
+<div class="row fullWidth collapse" id="home">
+
+
+	<div class="small-12 columns" style="background-color: #f3f3f3;">
+		<img class="imageFull" id="oscarBigHome_1" src="img/oscarBigHome_1.jpg" alt=""/>
+		<img class="imageFull" id="oscarBigHome_2" src="img/oscarBigHome_2.jpg" alt=""/>
+		<img class="imageFull" id="oscarBigHome_3" src="img/oscarBigHome_3.jpg" alt=""/>
+		<img class="imageFull" id="oscarBigHome_4" src="img/oscarBigHome_4.jpg" alt=""/>
+	</div>
+
+	<div class="small-1 medium-4 large-4 columns overlap" id="homeBlock">
+
+		<div class="columns small-12" id="homeInfo">
+
+			<table cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+				<tr>
+					<th width="60">
+						<img class="right" src="img/flechita.png">
+					</th>
+					<th width="180">
+						<p class="direccionHome">
+							Insurgentes Sur 363, Hipódromo condesa, México, DF
+						</p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<pre> </pre>
+					</th>
+					<th>
+						<p class="homePhone">
+							01 (55) 5211-7407
+						</p>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<a href="https://www.facebook.com/oscarvelazquezyoga" target="_blank">
+							<img class="right" src="img/fbHome.png" alt=""/>
+						</a>
+					</th>
+					<th>
+						<a href="https://www.facebook.com/oscarvelazquezyoga" target="_blank">
+							<span class="homeSocial">oscarvelazquezyoga</span>
+						</a>
+					</th>
+
+				</tr>
+				<tr>
+					<th>
+						<a href="https://twitter.com/OVYoga" target="_blank">
+							<img class="right" src="img/twHome.png" alt=""/>
+						</a>
+					</th>
+					<th>
+						<a href="https://twitter.com/OVYoga" target="_blank">
+							<span class="homeSocial">@OVYoga</span>
+						</a>
+					</th>
+				</tr>
+				</tbody>
+			</table>
+
+			<div class="sellos">
+				<div>
+					<img src="img/rysLogo.png" alt=""/>
+					<img src="img/rysLogo300.png" alt=""/>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<div class="small-12 columns overlap">
+		<div class="small-3 medium-2 large-2 columns" id="ovyogaLogo">
+			<img src="img/ovyogaLogo.png" alt=""/>
+		</div>
+	</div>
+</div>
+
+
+<div class="row fullWidth collapse show-for-small-only" id="homeInfoMobile">
+	<div class="columns small-12">
+		<div class="columns small-6">
+			<p class="direccionHome text-center">
+				Insurgentes Sur 363, Hipódromo condesa, México, DF
+			</p>
+		</div>
+		<div class="columns small-6">
+			<p class="homePhone text-center">
+				01 (55) 5211-7407
+			</p>
+		</div>
+	</div>
+	<div class="columns small-12">
+		<div class="columns small-6 text-center">
+			<img src="img/fbHome.png" alt=""/>
+			<span class="homeSocial" style="margin-left: 10px;">oscarvelazquezyoga</span>
+		</div>
+
+		<div class="columns small-6 text-center">
+			<img src="img/twHome.png" alt=""/>
+			<span class="homeSocial" style="margin-left: 10px;">@OVYoga</span>
+		</div>
+	</div>
+
+	<div class="sellos">
+		<div>
+			<img style="margin-top: 30px;" src="img/rysLogo.png" alt=""/>
+			<img style="margin-top: 30px;" src="img/rysLogo.png" alt=""/>
+		</div>
+	</div>
+</div>
+
+
+<div class="row fullWidth collapse">
+	<ul class="large-block-grid-4 medium-block-grid-4 small-block-grid-4">
+		<li><img src="img/homeGrid_1.jpg" alt=""/></li>
+		<li><img src="img/homeGrid_2.jpg" alt=""/></li>
+		<li><img src="img/homeGrid_3.jpg" alt=""/></li>
+		<li><img src="img/homeGrid_4.jpg" alt=""/></li>
+	</ul>
+</div>
+
+
+<!--ACERCA DE 
+===================================================================-->
+
+<div class="row fullWidth collapse" id="acercade">
+
+	<div class="columns small-12">
+
+		<div class="columns large-4 medium-4" id="acercadeBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita.png" alt=""/>
+
+				<p class="section-titles right">ACERCA DE</p>
+			</div>
+		</div>
+
+		<div class="columns large-8 medium-8" id="acercadeTimeline">
+			<div class="columns small-12">
+				<p class="text-center">OV Yoga es un espacio para que las personas practiquen yoga</p>
+			</div>
+
+			<div class="columns small-12">
+				<div class="row timeline-item">
+					<div class="columns small-6 medium-4 large-4 text-right vertical-center-parent">
+						<div class="vertical-center-child">
+							<span class="timeline-titles">MARZO DE 2014</span>
+
+							<p class="timeline-text">
+								Abrimos nuestras puertas
+								dando la bienvenida a todos aquellos
+								que tienen un verdadero interés en
+								practicar yoga y profundizar su práctica.
+							</p>
+						</div>
+					</div>
+					<div class="columns small-6 medium-4 large-4 end text-center vertical-center-parent">
+						<div class="vertical-center-child">
+							<img src="img/timeline_1.png" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="row timeline-item">
+					<div class="columns small-6 medium-4 large-4 large-offset-4 medium-offset-4 text-center vertical-center-parent">
+						<div class="vertical-center-child">
+							<img src="img/timeline_2.png" alt=""/>
+						</div>
+					</div>
+					<div class="columns small-6 medium-4 large-4 vertical-center-parent">
+						<p class="timeline-text vertical-center-child">
+							Ofrecemos un espacio cálido
+							y acogedor donde cualquier persona,
+							puede permitirse dejarse ir y
+							liberarse a su práctica.
+						</p>
+					</div>
+				</div>
+				<div class="row timeline-item">
+					<div class="columns small-6 medium-4 large-4 text-right vertical-center-parent">
+						<p class="timeline-text vertical-center-child">
+							OV Yoga es un lugar donde
+							podemos invitar a otros profesores,
+							formadores, motivadores y miembros
+							de la comunidad a participar,
+							inspirar y compartir sus dones y
+							talentos con todos.
+						</p>
+					</div>
+					<div class="columns small-6 medium-4 large-4 end text-center vertical-center-parent">
+						<div class="vertical-center-child">
+							<img src="img/timeline_3.png" alt=""/>
+						</div>
+					</div>
+				</div>
+				<div class="row timeline-item">
+					<div class="columns small-6 medium-4 large-4 large-offset-4 medium-offset-4 text-center vertical-center-parent">
+						<div class="vertical-center-child">
+							<img src="img/timeline_4.png" alt=""/>
+						</div>
+					</div>
+					<div class="columns small-6 medium-4 large-4 vertical-center-parent">
+						<p class="timeline-text vertical-center-child">
+							Esto se trata de abrir una puerta,
+							de dar a otros la oportunidad de
+							explorar sobre sí mismos su mente,
+							cuerpo y su alma... para iniciar
+							su propio viaje.
+						</p>
+					</div>
+				</div>
+				<div class="row timeline-item">
+					<div class="columns small-6 medium-4 large-4 text-right vertical-center-parent">
+						<p class="timeline-text vertical-center-child">
+							Nosotros como escuela tenemos mucho
+							que aprender todavía y esperamos
+							poder compartir este viaje con todos
+							ustedes.
+						</p>
+					</div>
+					<div class="columns small-6 medium-4 large-4 end text-center vertical-center-parent">
+						<div class="vertical-center-child">
+							<img src="img/timeline_5.png" alt=""/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--HORARIOS
+===================================================================-->
+
+<div class="row fullWidth collapse" id="horarios">
+
+	<div class="columns small-12" style="background-color: #fdfeee;">
+
+		<div class="columns large-4 medium-4" id="horariosBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita.png" alt=""/>
+
+				<p class="section-titles right">HORARIOS</p>
+			</div>
+		</div>
+
+		<div class="columns large-8 medium-8" id="horariosChart">
+			<img src="img/costosChart.png" alt=""/>
+		</div>
+
+		<div class="columns small-12">
+			<img src="img/horariosChart.png" alt=""/>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!--MAESTROS
+===================================================================-->
+
+<div class="row fullWidth collapse" id="maestros">
+
+	<div class="columns small-12">
+		<div class="columns large-4 medium-4" id="maestrosBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita.png" alt=""/>
+
+				<p class="section-titles right">MAESTROS</p>
+			</div>
+		</div>
+
+
+		<div class="columns large-8 medium-8 maestrosFeature" id="oscarFeature">
+			<div class="row">
+
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Óscar Velázquez, RYT 200</span>
+
+					<p class="featureText">
+
+						Óscar Velázquez es egresado de la Escuela Nacional de Danza Contemporánea INBA–SEP y fue
+						ejecutante
+						en danza contemporánea, ballet, expresión corporal, artes plásticas, música, técnica limón,
+						coreografía, teatro y kinesiología. Fue integrante de la Compañía Contempodanza y de la Compañía
+						Delfos, e invitado por las Compañías Utopía, Lydia Romero, Leticia Alvarado, Bernardo Benitez,
+						Aksenti, Juan Manuel R. Aprendió la técnica cubana de danza con el profesor Manolo Vázquez y la
+						profesora Lourdes Ulacia; la técnica Horton, con el profesor Milton Myers, en Nueva York; y la
+						técnica Palmeros, con el profesor Miguel Angel Palmeros. Participa en diversas presentaciones
+						del
+						músico Jorge Reyes.
+						<br/><br/>
+						Participó en los largometrajes La Banda de Los Panchitos (1986) y Olor a Muerte (1989). Por su
+						protagónico en La Banda de Los Panchitos fue nominado al Premio Ariel.
+					</p>
+				</div>
+
+				<div class="columns large-6 medium-6">
+					<img src="img/oscarFeature.jpg" alt=""/>
+
+					<p class="featureText">
+						En 2004 fundó y dirigió la Escuela MUKTA YOGA, proyecto con el que dio servicio en los campos de
+						las
+						artes, la psicología y la medicina. Además, se convirtió en el preparador físico de la arquera
+						mexicana Aída Román desde su preparación para los Juegos Panamericanos Guadalajara 2011 y Juegos
+						Olímpicos Londres 2012 hasta la fecha.
+						<br/><br/>
+						Es fundador y director de OV Yoga, su segundo proyecto como maestro de yoga.
+						<br/><br/>
+						Inició sus estudios en Hatha Yoga en la Gran Fraternidad Universal (GFU), Escuela del Oro.
+						Siguió su
+						formación con su Gurú Dharma Mittra, en el Dharma Yoga Center, de Nueva York, y con la maestra
+						Lygia
+						Lima aprendió los estilos Jivamukti, Ashtanga, Power Yoga, Iyengar Yoga, Yoga Terapéutico.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--<div class="columns large-8 medium-8 maestrosFeature" id="bibianaFeature">
+			<div class="row">
+
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Bibiana</span>
+
+					<p class="featureText">
+						Bibiana Islas Durán tiene es licenciada en Letras Francesas y traducción, lo que combinó con su
+						formación en la danza contemporánea, disciplina que adoptó desde 1993, en Punto en el Espacio,
+						escuela independiente bajo la dirección de Isabel Hernández.
+					</p>
+
+					<p class="featureText">
+						Bibiana está Interesada en todos los estilos que aporten a la danza belleza, gozo, fortaleza
+						interna, libertad y paz se encontró con el Yoga. Para Bibiana, enseñar y difundir este maravilloso
+						arte y filosofía representa un gesto de gratitud a sus maestros, a la fortuna de haberlos encontrado
+						y de formar parte de este proceso de transformación.
+					</p>
+
+				</div>
+
+				<div class="columns large-6 medium-6">
+					<img src="img/bibianaFeature.jpg" alt=""/>
+
+					<p class="featureText">
+						“El trabajo del cuerpo es reconocer lo finito, para entrar en contacto con lo infinito y que por
+						medio de las posturas (asanas), este plano manifiesto básico, sea el vehículo para fusionar el
+						cuerpo con la mente”.
+					</p>
+				</div>
+
+			</div>
+		</div>-->
+
+
+		<div class="columns large-8 medium-8 maestrosFeature" id="raulFeature">
+			<div class="row">
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Raúl Quintero, RYT 500</span>
+
+					<p class="featureText">
+						Raúl Quintero Ortiz estudió Administración Hotelera y se inclinó por las Relaciones Públicas,
+						que
+						van perfecto con su personalidad. Organiza cursos y talleres, maneja redes sociales y, claro, es
+						uno
+						de nuestros maestros en OV Yoga.
+					</p>
+
+					<p class="featureText">
+						Raúl comenzó a practicar Yoga en 2010 con la Maestra Jñana Dakini.
+					</p>
+
+					<p class="featureText">
+						En 2012 obtuvo la certificación como RYT 200 por Yoga Alliance, en 2013 tomó un curso para
+						enseñar
+						yoga a niños. También está certificado en 300 horas por OV Yoga y en Vinyasa Flow.
+					</p>
+				</div>
+				<div class="columns large-6 medium-6">
+					<img src="img/raulFeature.jpg" alt=""/>
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="columns large-8 medium-8 maestrosFeature" id="marianaFeature">
+			<div class="row">
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Mariana Cortés</span>
+
+					<p class="featureText">
+						Mariana Cortés es traductora de profesión.
+					</p>
+
+					<p class="featureText">
+						Su formación en la danza clásica desde los 11 años de edad y su interés por la cultura de México la
+						llevaron al yoga. En 1997 comenzó a practicar esta disciplina con Óscar Velázquez. En 1999 recibe la
+						beca del ICCR (Indian Council for Cultural Relations) para segues con sus estudios de danza y yoga.
+						Ha complementado su conocimiento con cursos de osteopatía, clases en el estudio de Dharma Mittra
+						(Nueva York) y en el Shadow Yoga Portland y Sellwood Yoga (Portland).
+					</p>
+				</div>
+				<div class="columns large-6 medium-6">
+					<img src="img/marianaFeature.jpg" alt=""/>
+
+					<p class="featureText">
+						Después de varios años de impartir clases de yoya en escuelas y para particulares, en 2010 fundó su
+						propio estudio en la ciudad de México.
+					</p>
+				</div>
+			</div>
+		</div>-->
+
+
+		<div class="columns large-8 medium-8 maestrosFeature" id="vilmaFeature">
+			<div class="row">
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Vilma Saldate, ERYT 500</span>
+
+					<p class="featureText">
+						Vilma Saldate tiene un Master en Diseño Gráfico, le gusta enseñar yoga y compartir la
+						experiencia de
+						libertad que ella misma siente al practicarla.
+					</p>
+
+					<p class="featureText">
+						Su momento “Yogui” llegó en 2004. Comenzó a practicar Hatha con una bailarina de danza
+						contemporánea
+						que me pronosticó un futuro en Yoga. Tres años más tarde comenzó a practicar otros estilos como
+						Iyengar, Kundalini, Ashtanga, Anusara, SwáSthya, Power y Vinyasa Flow con maestros de Sonora,
+						Venezuela, San Francisco, India y D.F., quienes tuvieron una influencia muy fuerte en ella y le
+						hicieron experimentar una transformación interna en varios niveles.
+					</p>
+				</div>
+				<div class="columns large-6 medium-6">
+					<img src="img/vilmaFeature.jpg" alt=""/>
+
+					<p class="featureText">
+						En 2010 recibió su primera certificación en Ashtanga, con Caroline Klebi (Beverly Hills,
+						California)
+						y de 500 horas (Tej Monga, India y Óscar Velázquez, Mx.), avalada por Yoga Alliance.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!--<div class="columns large-8 medium-8 maestrosFeature" id="pabloFeature">
+			<div class="row">
+				<div class="columns large-6 medium-6">
+					<span class="featureTitle">Juan Pablo Pacheco</span>
+
+					<p class="featureText">
+						Juan Pablo Pacheco además de ser uno de nuestros maestros en OV Yoga, estudia Psicoterapia Corporal
+						Biodinámica y ofrece terapias de osteopatía.
+					</p>
+
+					<p class="featureText">
+						En el año 2000 viajó a Cuba, donde comenzó a practicar esta disciplina con el maestro Eloyd
+						Quindelm. Cinco años después, de regreso a México, siguió sus estudios.
+					</p>
+
+					<p class="featureText">
+						El cuerpo es una herramienta para transmutar y transformar nuestra energía y conciencia.
+					</p>
+				</div>
+				<div class="columns large-6 medium-6">
+					<img src="img/pabloFeature.jpg" alt=""/>
+				</div>
+			</div>
+		</div>-->
+	</div>
+
+	<div class="columns small-12" id="biosGrid">
+
+		<div class="columns large-3">
+			<span class="maestro-title">Maestros</span>
+
+			<p>
+				Todos nuestros maestros cuentan con experiencia en diferentes estilos de yoga.
+			</p>
+		</div>
+
+		<div class="columns large-9">
+			<ul class="bios-block-grid">
+				<li>
+					<img class="imageFull" src="img/bioImages_1.jpg" alt=""/>
+					<span class="clearfix bio-titles">Óscar Velázquez, RYT 200</span>
+					<span class="clearfix bio-text">Hatha Restarativo | vinyasa</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="oscarCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<a href="https://twitter.com/OVYoga" target="_blank"><img class="right"
+								style="margin-left: 10px;"
+								src="img/twCV.png" alt=""/></a>
+						<a href="https://www.facebook.com/oscarvelazquezyoga" target="_blank"><img class="right"
+								src="img/fbCV.png"
+								alt=""/></a>
+					</div>
+				</li>
+
+				<li>
+					<img class="imageFull" src="img/bioImages_2.jpg" alt=""/>
+					<span class="clearfix bio-titles">Raúl Quintero, RYT 500</span>
+					<span class="clearfix bio-text">Hatha Restarativo | vinyasa | yoga para niños</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="raulCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<a href="https://twitter.com/Raul_qo" target="_blank"><img class="right"
+								style="margin-left: 10px;"
+								src="img/twCV.png" alt=""/></a>
+						<a href="https://www.facebook.com/rqortiz" target="_blank"><img class="right" src="img/fbCV.png"
+								alt=""/></a>
+					</div>
+				</li>
+
+				<!--<li>
+					<img class="imageFull" src="img/bioImages_3.jpg" alt=""/>
+					<span class="clearfix bio-titles">Bibiana islas</span>
+					<span class="clearfix bio-text">vinyasa</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="bibianaCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<img class="right hide" style="margin-left: 10px;" src="img/twCV.png" alt=""/>
+						<img class="right hide" src="img/fbCV.png" alt=""/>
+					</div>
+				</li>-->
+
+				<!--<li>
+					<img class="imageFull" src="img/bioImages_4.jpg" alt=""/>
+					<span class="clearfix bio-titles">Mariana CortÉs</span>
+					<span class="clearfix bio-text">vinyasa</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="marianaCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<img class="right hide" style="margin-left: 10px;" src="img/twCV.png" alt=""/>
+						<img class="right hide" src="img/fbCV.png" alt=""/>
+					</div>
+				</li>-->
+
+				<li>
+					<img class="imageFull" src="img/bioImages_5.jpg" alt=""/>
+					<span class="clearfix bio-titles">Vilma Saldate, ERYT 500</span>
+					<span class="clearfix bio-text">vinyasa</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="vilmaCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<a href="https://twitter.com/vilma_saldate" target="_blank"><img class="right"
+								style="margin-left: 10px;"
+								src="img/twCV.png" alt=""/></a>
+						<a href="https://www.facebook.com/vilmasaldate" target="_blank"><img class="right"
+								src="img/fbCV.png" alt=""/></a>
+					</div>
+				</li>
+
+				<!--<li>
+					<img class="imageFull" src="img/bioImages_6.jpg" alt=""/>
+					<span class="clearfix bio-titles">Juan pablo pacheco</span>
+					<span class="clearfix bio-text">vinyasa</span>
+
+					<div class="columns small-12 noGuuter">
+						<img id="pabloCV" class="left pointer" src="img/cvBtn.png" alt=""/>
+						<img class="right hide" style="margin-left: 10px;" src="img/twCV.png" alt=""/>
+						<img class="right hide" src="img/fbCV.png" alt=""/>
+					</div>
+				</li>-->
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--FORMACIONES
+===================================================================-->
+
+<div class="row fullWidth collapse" id="formaciones" style="background-color: #fdfeee;">
+
+	<div class="columns small-12">
+
+		<div class="columns large-4 medium-4" id="formacionesBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita.png" alt=""/>
+
+				<p class="section-titles right">FORMACIONES</p>
+			</div>
+		</div>
+
+		<div class="columns large-8 medium-8" id="formacionesSide">
+			<div class="row">
+				<div class="columns large-6">
+					<span class="timeline-titles">ESCUELA CERTIFICADA</span>
+					<span class="timeline-text clearfix">
+                    Somos una escuela avalada por Yoga Alliance, nuestro <b>Registro ID 145764 RYS 200, RYS 300</b>, el cual puedes verificar en <a
+							href="https://www.yogaalliance.org/" target="_blank">www.yogaalliance.org</a>
+                </span>
+
+
+					<div class="columns large-12" style="margin-top: 90px;">
+
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+							<tr>
+								<th>
+									<img class="right" src="img/flechita-cafe.png" alt=""/>
+								</th>
+								<th>
+									<span class="timeline-text" style="color: #5f452a;"><b>300 hrs.</b> <br/>PRIMER GENERACIÓN</span>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<img class="right" src="img/flechita-cafe.png" alt=""/>
+								</th>
+								<th>
+									<span class="timeline-text" style="color: #5f452a;"><b>200 hrs.</b> <br/>PRIMER GENERACIÓN</span>
+								</th>
+							</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+				<div class="columns large-6">
+					<ul class="example-orbit" data-orbit>
+						<li>
+							<img class="active" src="img/formaciones_1.jpg" alt="slide 1"/>
+						</li>
+						<li>
+							<img class="active" src="img/formaciones_2.jpg" alt="slide 2"/>
+						</li>
+						<li>
+							<img class="active" src="img/formaciones_3.jpg" alt="slide 3"/>
+						</li>
+						<li>
+							<img class="active" src="img/formaciones_4.jpg" alt="slide 4"/>
+						</li>
+						<li>
+							<img class="active" src="img/formaciones_5.jpg" alt="slide 5"/>
+						</li>
+						<li>
+							<img class="active" src="img/formaciones_6.jpg" alt="slide 6"/>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="columns small-12" id="certificacionInfo">
+		<div class="columns small-10 large-offset-1">
+
+			<span class="timeline-titles text-left">CERTIFICACIONES DE 200 Y 300 HRS.</span>
+
+			<p class="timeline-text text-left">
+				Nuestros programas de certificación están abiertos para todos los alumnos con un verdadero interés
+				por Yoga, ya sea para avanzar en su práctica personal o para convertirse en futuros maestros, estos
+				programas están diseñados para proveer a los alumnos con una oportunidad de experimentar y
+				profundizar su práctica.
+				<br/><br/>
+				El tener una certificación de Yoga Alliance te da credibilidad como maestro, al estar registrado con
+				esta Asociación te permite que otros maestros y escuelas de todo el mundo te encuentren por medio de
+				su página web, el portar alguno de estos sellos es una garantía que estás preparado para impartir
+				clases.
+			</p>
+		</div>
+	</div>
+
+	<div class="columns small-12">
+		<div class="columns large-6">
+			<img src="img/ryt200.jpg" alt=""/>
+
+			<br/><br/>
+			<span class="clearfix timeline-titles text-left" style="text-transform: uppercase; font-size: 1.3em;">comenzamos en febrero de 2017</span>
+			<br/>
+
+			<span class="clearfix certificacion-titles">1er. NIVEL 200 hrs. <br/>con Oscar Velázquez e Instructores Invitados</span>
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-6">
+					<span class="certificacion-titles">Temas</span>
+					<ul>
+						<li> MÓDULO 1 - FEBRERO 1 Y 15. <br>
+							Introducción al camino del yoga, historia  del yoga, bhagavad gita, gunas, desglose de posturas.
+						</li>
+						<li>MÓDULO 2 - MARZO 1 Y 15. <br>
+							La ciencia del yoga, koshas, nadis, chakras y bandhas, desglose de posturas.
+						</li>
+						<li>MÓDULO 3 - ABRIL 5 Y 19. <br>
+							Anatomía i, saludo al sol, vinyasa, el poder del pensamiento, yoga nidra, desglose de posturas.
+						</li>
+						<li>MÓDULO 4 - MAYO 3 Y 17. <br>
+							Anatomía ii, mantras y japa, ayurveda, desglose de posturas.
+						</li>
+					</ul>
+				</div>
+
+				<div class="columns small-6">
+					<ul>
+						<li style="list-style: none;">
+							<pre> </pre>
+						</li>
+						<li>MÓDULO 5 - JUNIO 7 Y 28. <br>
+							Anatomía iii, consejos generales y estructura para enseñar una clase de yoga, desglose de posturas.
+						</li>
+						<li>MÓDULO 6 - JULIO 5 Y 19. <br>
+							Anatomía iv, ser un maestro  de yoga, el yoga como negocio, desglose de posturas.
+						</li>
+						<li>MÓDULO 7 - AGOSTO 2 Y 16. <br>
+							Salud integral, nutrición, herbolaria y naturopatía, yoga sutras de patanjali, dioses y diosas, desglose de posturas.
+						</li>
+						<li>MÓDULO 8 - SEPTIEMBRE 6 Y 20. <br>
+							Principios vitales en la práctica del hatha, desglose de posturas, evaluación final.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-12">
+					<span class="certificacion-titles">HORARIOS</span>
+					<ul>
+						<li>
+							Los miércoles de 11:30 a 17:30 hrs. (170 horas de formación, 20 horas de práctica física y 10 hrs. De práctica docente).
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-12">
+					<span class="certificacion-titles">REQUISITOS</span>
+					<ul>
+						<li>Tener mínimo 2 años de práctica constante en yoga</li>
+						<li>Carta de intención (una cuartilla)</li>
+						<li>Carta de recomendación si vienes de otra escuela</li>
+						<li>Currículum de Yoga (una cuartilla)</li>
+						<li>Currículum Vitae (una cuartilla)</li>
+						<li>Copia de una Identificación oficial</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-12">
+					<span class="certificacion-titles">FORMAS DE PAGO</span>
+					<ul>
+						<li>8 módulos (uno por cada mes) con un costo de $2,900 cada uno.</li>
+						<li>El precio de toda la certificación es de $ 23,200</li>
+						<li>Si realizas el pago total de la certificación se te hará un 10% de descuento.</li>
+						<!--<li>Certificado por Yoga Alliance (el registro de Yoga Alliance corre por cuenta de cada
+							alumno).
+						</li>
+						<li>Certificado de OV YOGA</li>
+						<li>En los paquetes para las clases de yoga se te hará un 40% de descuento.</li>-->
+					</ul>
+
+					<!--<span>Promoción por pago anticipado $28,000 ($3,500 por módulo) Inversión de $31,000 ($3,875 por módulo)</span>-->
+
+					<p>
+					<pre> </pre>
+					</p>
+
+					<span class="certificacion-titles">CERTIFICADO</span>
+
+					<p>
+						ENTREGA DE CERTIFICADO DE YOGA ALLIANCE
+						<br>
+						(el pago del registro en Yoga Alliance va por cuenta de cada alumno).
+						<br>
+						ENTREGA DE CERTIFICADO DE OV YOGA
+						<br>
+						En los paquetes para las clases de yoga se te hará un 40% de descuento.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns large-6">
+			<img src="img/ryt500.jpg" alt=""/>
+
+			<br/><br/><br/><br/><br/>
+			<span class="clearfix certificacion-titles">CERTIFICACIÓN PARA INSTRUCTORES EN FORMACIÓN <br/>MORELIA 2017-2018</span>
+			<span class="clearfix certificacion-titles">2do. NIVEL (300 HRS)<br/>con Oscar Velázquez e Instructores Invitados</span>
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-12">
+					<span class="certificacion-titles">TEMAS</span>
+					<ul>
+						<li>MÓDULO 1 - FEBRERO 10, 11 Y 12. <br>
+							Anatomía y fisiología, yin yoga, desglose de posturas.
+						</li>
+						<li>MÓDULO 2 - MARZO 10, 11 Y 12. <br>
+							Primera serie de ashtanga, secuencia de posturas, yoga nidra, vasanas, anhelos, desglose de posturas.
+						</li>
+						<li>MÓDULO 3 - ABRIL 21, 22 Y 23. <br>
+							Conciencia superior, necesidad de un gurú, el balance de la vida, bindu, drishtis, desglose de posturas.
+						</li>
+						<li>MÓDULO 4 - MAYO 12, 13 Y 14. <br>
+							Dharma yoga, desglose de posturas.
+						</li>
+
+						<li>MÓDULO 5 - JUNIO 9, 10 Y 11. <br>
+							Jivamukti yoga, desglose de posturas.
+						</li>
+
+						<li>MÓDULO 6 - JULIO 14, 15 Y 16. <br>
+							Tradición sivananda, yoga sutras, mantras, japa, desglose de posturas.
+						</li>
+
+						<li>MÓDULO 7 - AGOSTO 11, 12 Y 13. <br>
+							Yoga para el embarazo, desglose de posturas.
+						</li>
+
+						<li>MÓDULO 8 - SEPTIEMBRE 8, 9 Y 10. <br>
+							Yoga restaurativo, desglose de posturas.
+						</li>
+						<li>MÓDULO 9 - OCTUBRE 13, 14 Y 15. <br>
+							Kundalini, desglose de posturas.
+						</li>
+						<li>MÓDULO 10 - NOVIEMBRE 10, 11 Y 12. <br>
+							Sanación desglose de posturas.
+						</li>
+						<li>MÓDULO 11 - DICIEMBRE 8, 9 Y 9. <br>
+							Salud integral, nutrición, herbolaria y naturopatía ii, teoría de la belleza y antropología del yoga, desglose de posturas.
+						</li>
+						<li>MÓDULO 12 - ENERO 12, 13 Y 14. <br>Chamanismo, desglose de posturas, evaluación final.</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="row" style="margin-top: 30px;">
+				<div class="columns small-12">
+					<span class="certificacion-titles">HORARIOS</span>
+					<ul>
+						<li>
+							Viernes de 18:00 a 20:00 hrs., sábados y domingos de 8:00 a 11:30 y de 13:00 a 16:00 hrs.
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="row" style="margin-top: 30px;">
+					<div class="columns small-12">
+						<span class="certificacion-titles">REQUISITOS</span>
+						<ul>
+							<li>Tener mínimo 2 años de práctica constante en yoga</li>
+							<li>Carta de intención (una cuartilla)</li>
+							<li>Carta de recomendación si vienes de otra escuela</li>
+							<li>Currículum de Yoga (una cuartilla)</li>
+							<li>Currículum Vitae (una cuartilla)</li>
+							<li>Copia de una Identificación oficial</li>
+							<li>Copia de Certificado (200 hrs.) de Yoga Alliance o tu número de registro</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--<div class="row" style="margin-top: 30px;">
+					<div class="columns small-12">
+						<span class="certificacion-titles">FORMAS DE PAGO</span>
+						<ul>
+							<li>12 módulos (1 módulo por mes) con un costo de $2,540.00 cada uno.</li>
+							<li>El precio de toda la certificación es de $30,480.00</li>
+							<li>Si realizas el pago total de la certificación se te aplica un 10% de descuento.</li>
+						</ul>
+					</div>
+				</div>-->
+
+
+				<div class="row" style="margin-top: 30px;">
+					<div class="columns small-12">
+						<span class="certificacion-titles">CERTIFICADO</span>
+
+						<p>
+							<br> Entrega de certificado de yoga alliance  300 hrs. (el pago del registro en yoga alliance va por cuenta de cada alumno).
+							<!--<br>(el pago del registro en Yoga Alliance va por cuenta de cada alumno).
+							<br>ENTREGA DE CERTIFICADO DE OV YOGA
+							<br>Si tienes 200 hrs. de otra certificación puedes tomar el curso con nosotros y se te
+							entregará certificado de OV YOGA.
+							<br>
+							<br>En los paquetes para las clases de yoga se te hará un 40% de descuento.-->
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<!--TALLERES
+===================================================================-->
+
+<div class="row fullWidth collapse" id="talleres">
+
+	<div class="columns small-12">
+
+		<div class="columns large-4 medium-4" id="talleresBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita-cafe.png" alt=""/>
+
+				<p class="section-titles right" style="color: #60452a !important;">TALLERES</p>
+			</div>
+		</div>
+
+		<div class="columns large-8 medium-8" id="talleresCarousel">
+
+			<ul class="example-orbit" data-orbit>
+
+				<li>
+					<img src="img/talleres/talleres-proximamente.jpg" alt="slide 1"/>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<!--GALERIA
+===================================================================-->
+
+<div class="row fullWidth collapse" id="galeria" style="background-color: #fdfeee;">
+
+	<div class="columns small-12">
+
+		<div class="columns large-4 medium-4" id="galeriaBlock">
+			<div class="columns small-12">
+				<img class="left" style="margin-top: 10px;" src="img/flechita-cafe.png" alt=""/>
+
+				<p class="section-titles right" style="color: #60452a !important;">GALERÍA</p>
+			</div>
+		</div>
+
+		<div class="columns large-8 medium-8 small-12">
+			<div id="galeriaCarousel">
+
+				<!--<div><img src="img/oscar-velazquez-yoga-galeria-1.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-2.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-3.jpg" alt=""/></div>-->
+
+				<div><img src="img/oscar-velazquez-yoga-galeria-1.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-2.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-3.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-4.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-5.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-6.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-7.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-8.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-9.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-10.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-11.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-12.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-13.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-14.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-15.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-16.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-17.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-18.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-19.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-20.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-21.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-22.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-23.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-24.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-25.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-26.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-27.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-28.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-29.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-30.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-31.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-32.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-33.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-34.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-35.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-36.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-37.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-38.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-39.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-40.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-41.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-42.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-43.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-44.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-45.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-46.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-47.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-48.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-49.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-50.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-51.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-52.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-53.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-54.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-55.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-56.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-57.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-58.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-59.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-60.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-61.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-62.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-63.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-64.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-65.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-66.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-67.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-68.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-69.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-70.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-71.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-72.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-73.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-74.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-75.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-76.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-77.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-78.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-79.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-80.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-81.jpg" alt=""/></div>
+				<div><img src="img/oscar-velazquez-yoga-galeria-82.jpg" alt=""/></div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!--CONTACTO
+===================================================================-->
+
+<div class="row fullWidth collapse" id="contacto">
+	<div class="columns small-12 medium-6 large-6" id="map-canvas" style="min-height: 400px;">
+		<a href="https://www.google.com.mx/maps/place/OV+YOGA/@19.411089,-99.167041,17z/data=!3m1!4b1!4m2!3m1!1s0x85d1ff3f77fdf0ab:0xa4891801e384ca5d?hl=es"
+				target="_blank"><img class="fullWidth" src="img/mapa.jpg" alt=""/></a>
+	</div>
+	<div class="columns small-12 medium-6 large-6 text-center" style="margin-top: 50px;">
+		<img src="img/ovyogaLogo.png" alt=""/>
+
+		<p class="text-left" style="padding: 30px 100px 30px 100px; font-size: 1em;">
+			Insurgentes Sur 363, 501 (5to piso)
+			Hipódromo condesa,
+			México, DF
+			<br/><br/>
+			01 (55) 5211-7407
+			<br/><a href="mailto:contacto@ovyoga.mx">contacto@ovyoga.mx</a>
+			<br/><br/>
+			Tenemos la opción de estacionamiento en la calle Campeche #209 casi esquina
+			con Insurgentes, dos horas por $30
+			con boleto sellado.
+		</p>
+	</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-48847112-2', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</body>
 </html>
